@@ -39,7 +39,7 @@ jobs:
     - name: Build and Push Docker Image
       uses: GlueOps/github-actions-build-push-containers@v0.3.7
       with:
-        image: kapec007/demo-repo
+        image_name: kapec007/demo-repo
         registry: docker.io
         dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
         dockerhub_password: ${{ secrets.DOCKERHUB_PASSWORD }}
